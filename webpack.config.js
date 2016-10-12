@@ -16,9 +16,13 @@ module.exports = {
         loader: 'babel'
       },
       {
-        test: /\.css/,
+        test: /\.css$/,
         loaders: ['style', 'css'],
         include: __dirname + '/src'
+      },
+      {
+        test: /\.less$/,
+        loaders: ['style', 'css', 'less'],
       }
     ]
   },
